@@ -37,7 +37,7 @@ model Settings {
   id              Int      @id @default(autoincrement())
   shop            String   @unique
   timezone        String   @default("UTC")
-  cuttoffHour     Int      @default(14)
+  cutoffHour      Int      @default(14)
   processingDays  Int      @default(1)
   shippingDays    Int      @default(3)
   workingDays     String   @default("1,2,3,4,5")
